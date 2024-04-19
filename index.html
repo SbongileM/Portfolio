@@ -119,8 +119,40 @@
         </section>
         <br>
         <section id="connect">
-
-        </section>
+            <div class="Form">
+                <p>Got a question, aproposal or need more info?</p>
+                <form>
+                  <p><legend>Get in touch:</legend></p>
+                  <p>
+                    <input
+                      type="text"
+                      name="Name"
+                      placeholder="Full name"
+                      required
+                    />
+                  </p>
+                  <p>
+                    <input type="email" name="email" placeholder="Email" required />
+                  </p>
+                  <p>
+                    <input
+                      type="tel"
+                      pattern="[0-9]{3}[0-9]{3}[0-9]{4}"
+                      name="contact number"
+                      placeholder="Phone number"
+                      required
+                    />
+                  </p>
+                  <p>
+                    <textarea name="message" cols="30" rows="10" placeholder="Type your Message here"></textarea>
+                  </p>
+                </form>
+                <br />
+            <button id="send" type="submit" formaction="server" formmethod="post">
+                Connect
+            </button>
+            </div>
+            </section>
     </main>
     <footer>
 
