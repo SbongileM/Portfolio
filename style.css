@@ -1,0 +1,248 @@
+/* Web page reset settings */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+
+body{
+    background-color: hsl(180, 11%, 11%);
+    color: #00ffa69d;
+    font-family: Consolas, "Courier New", monospace;
+}
+
+header{
+    margin: 2%;
+}
+
+a{
+    text-decoration:none ;
+    color: #00ffa68e;
+}
+
+a:hover{
+    color: #00ffa6;
+}
+
+#home{
+    font-size: 2.5rem;
+    margin-left: 2rem;
+}
+
+.nav_list{
+    list-style-type: none;
+    display: flex;
+    gap: 2%;
+    font-size: 1.5rem;
+}
+
+#navigation ul{
+    justify-content: flex-end;
+    height: 5vh;
+}
+
+main{
+    text-align: center;
+}
+
+.welcome{
+    text-align: center;
+    padding:1rem;
+}
+
+#welcome_message{
+    padding:1rem;
+}
+
+#welcome_message h1{
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+    color: #00ffa6;
+}
+
+#message{
+    font-size: 1.2rem;
+}
+
+#profile_photo img{
+    border-radius: 50%;
+    width: 21rem;
+    height: auto;
+}
+
+#profile_name,
+#location{
+    font-size: 1.5rem;
+}
+
+#CV,#send {
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    border: none;
+    border-radius: 1.5rem;
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: hsl(0, 0%, 100%);
+    background-color: rgb(53, 66, 71);
+}
+
+button:hover{
+    background-color: rgb(53, 86, 81);
+}
+
+#github img,
+#linkedin img{
+    border-radius: 50%;
+    width: 3rem;
+}
+
+#about h2{
+    color: #00ffa6;
+}
+
+#about_message{
+    border: 3px solid rgb(55, 91, 105);
+    border-radius: 1.8rem;
+    margin-inline: 10%;
+    font-size: 1.15rem;
+    padding:1rem;
+}
+
+#brief{
+    font-size: 1.3rem;
+    margin: 2% 3%;
+}
+
+.containers{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30%, 2fr));
+    font-size: 1rem;
+    gap: 2rem;
+    margin-inline: 7%;
+}
+
+.container{
+    border: 3px solid rgb(55, 91, 105);
+    border-radius: 1.8rem;
+    padding: 1rem;
+}
+
+.experience_title{
+    color: #00ffa6;
+    margin-bottom:1.5%;
+}
+
+.container h3{
+    color: #00ffa6e7;
+}
+
+.proficiency_level{
+    margin-bottom: 3%;
+}
+
+.project_title{
+    color: #00ffa6;
+    margin-bottom:0.5%;
+    font-size: 1.5rem;
+}
+
+.stack{
+    margin-bottom:0.5%;
+}
+
+.demo{
+    border: 3px solid rgb(55, 91, 105);
+    overflow: hidden;
+    text-align: center;
+    border-radius: 1.8rem;
+    padding: 1rem;
+    margin-inline: 7%;
+}
+
+.demo img{
+    width: 40%;
+    max-width: 100%;
+    height: auto;
+}
+
+.demo figcaption{
+    color: #00ffa6e7;
+}
+
+.demo button {
+    padding: 0.5rem;
+    margin-top: 1rem;
+    border: none;
+    border-radius: 1.5rem;
+    font-size: 1rem;
+    color: hsl(0, 0%, 100%);
+    background-color: rgb(53, 66, 71);
+}
+
+.Form{
+    font-size: 1.3rem;
+    color: #00ffa69d;
+}
+
+.Form legend{
+    margin: 1rem;
+}
+
+.Form input,
+.Form textarea{
+    font-size: 1.2rem;
+    color: rgb(173, 241, 173);
+    background-color: hsl(180, 11%, 11%);
+    border: none;
+    border-bottom: solid grey;
+    border-width: 0.1em;
+    padding: 1rem;
+  }
+
+.Form textarea{
+  margin-top: 1rem;
+}
+  
+.direct_contact{
+    font-size: 1.1rem;
+    margin-bottom: 1%;
+}
+
+.direct_contact h3{
+    color: #00ffa6e7;
+    font-size: 1.5rem;
+}
+
+footer{
+    background-color: hsl(180, 11%, 7%);
+    text-align: center;
+    padding:1%;
+}
+
+.footer_navigation ul{
+    justify-content: center;
+    padding: 2%;
+}
+
+#top{
+    font-size: 1.3rem;
+    text-decoration:underline;
+}
+
+
+@media screen and (max-width: 745px) {
+    .containers{
+        grid-template-columns: repeat(1, minmax(30%, 1fr));
+    }
+}
+
+@media screen and (max-width: 525px) {
+    .demo img{
+        width: 20rem;
+    }
+}
