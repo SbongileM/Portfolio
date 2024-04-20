@@ -11,9 +11,9 @@
 <body>
     <header>
         <div class="logo">
-            <a href="#" class="home">Sbosh</a>
+            <a href="#" id="home">Sbosh</a>
         </div>
-        <div class="navigation">
+        <div id="navigation">
             <nav aria-label="Portfolio-navigation">
                 <ul class="nav_list">
                     <li><a href="#about">About</a></li>
@@ -25,54 +25,65 @@
         </div>
     </header>
     <main>
-        <section id="#">
-            <div class="welcome_message">
-                <p class="job_title"><h1>Aspiring Fullstack Developer</h1></p>
-                <p class="message">I design intuitive but yet aesthetic desktop and web applications</p>
+        <section id="#" class="welcome">
+            <div id="welcome_message">
+               <h1>Aspiring Fullstack Developer</h1>
+                <p id="message">I design intuitive but yet aesthetic desktop and web applications</p>
             </div>
-            <br>
-            <div id="profile_photo">
-                <img src="Resources\profile.jpg" alt="Profile photo"/>
+            <div class="profile"> 
+                <div id="profile_photo">
+                    <img src="Resources\profile.jpg" alt="Profile photo"/>
+                </div>
             </div>
+        </section>
+        <section id="about" >
             <br>
-            <div class="profileinfo">
-                <p id="profile_name">Sbongile(Sbosh) Mdaki</p>
-                <p><span id="pronouns">She/Her&female;</span>
-                <span id="location">&#128205;RSA</span></p>
+            <p id="profile_name">Sbongile Mdaki (&female;)</p>
+                <p id="location">&#128205;South Africa</p>
+                <br>
+                <button id="CV">Download CV</button>
                 <p><span id="github"><a href="https://github.com/SbongileM">
                     <img src="Resources\github.png" alt="GitHub link"></a></span>
                     <span id="linkedin"><a href="https://www.linkedin.com/in/sbongile-zp-mdaki-9977a1250">
                     <img src="Resources\linkedin.png" alt="Linkedin link"></a></span></p>
-            </div>
-        </section>
-        <br>
-        <section id="about" >
-            <h2>Hello👋. Welcome to my digital haven! I am thrilled to have you here.</h2>
+            <br>
+            <div id="about_message">
+            <h2>Welcome to my digital haven!</h2>
+            <br>
             <p>   
-                I'm on an exhilarating journey as an aspiring full-stack developer, where I 
-                transform the language of 1s and 0s into captivating and user-friendly applications. 
-                For me, it's not just about coding; it's about crafting digital experiences that seamlessly 
+                I'm not just about coding; I transform 1s and 0s into captivating digital experiences that seamlessly 
                 blend aesthetics with functionality. With a passion for both design and engineering, 
-                I strive to create software that not only looks stunning but also exceeds user expectations. 
+                I strive to create software that not only looks the part, but also exceeds user expectations. 
                 My diverse exposure to various technologies, coupled with my problem-solving prowess and 
-                critical thinking, empowers me to build robust and scalable solutions.
-                
-                Beyond the glow of the computer screen, you'll find me pursuing diverse interests that 
-                enrich my perspective. Whether I'm hitting the gym, diving into a good book, or exploring 
-                the depths of human nature through podcasts, I'm always fueled by curiosity and a thirst 
-                for knowledge. And of course, weekends wouldn't be complete without a thrilling game of rugby!
-                
-                So, come along on this journey with me. 
-                Let's explore the endless possibilities of technology and creativity together. 
+                critical thinking, empowers me to build robust and scalable solutions.</p>
+            <br>    
+            <p>Beyond the glow of the computer screen, you'll find me either hitting the gym, diving into a good book, or exploring 
+                the depths of human nature through podcasts. I'm always fueled by curiosity and a thirst 
+                for knowledge, and of course, weekends wouldn't be complete without a thrilling game of rugby!</p>
+            <br>    
+            <p>So come along on this journey with me. Let's explore the endless possibilities of technology 
+                and creativity together. 
             </p>
+        </div>
         </section>
-        <br>
         <section id="experience">
-            <p>I am a self-taught developer with under 1 year of experience and sprinkle
+            <br>
+            <p id="brief">I am a self-taught developer with under one year of experience and a sprinkle
                 of an academic background. My current stack is as follows:
             </p>
             <div class="containers">
-                <div class="container">
+            <div class="container">
+                <h2 class="experience_title">Frameworks</h2>
+                <h3>SFML</h3>
+                <p class="proficiency_level">Experienced</p>
+                <h3>PyQt</h3>
+                <p class="proficiency_level">Intermediate</p>
+                <h3>Django</h3>
+                <p class="proficiency_level">Beginner</p>
+                <h3>Tkinter</h3>
+                <p class="proficiency_level">Beginner</p>
+            </div>
+            <div class="container">
                 <h2 class="experience_title">Languages</h2>
                 <h3>HTML</h3>
                 <p class="proficiency_level">Intermediate</p>
@@ -92,17 +103,6 @@
                 <p class="proficiency_level">Intermediate</p>
             </div>
             <div class="container">
-                <h2 class="experience_title">Frameworks</h2>
-                <h3>SFML</h3>
-                <p class="proficiency_level">Experienced</p>
-                <h3>PyQt</h3>
-                <p class="proficiency_level">Intermediate</p>
-                <h3>Django</h3>
-                <p class="proficiency_level">Beginner</p>
-                <h3>Tkinter</h3>
-                <p class="proficiency_level">Beginner</p>
-            </div>
-            <div class="container">
                 <h2 class="experience_title">Tools</h2>
                 <h3>SQL lite DB browser</h3>
                 <p class="proficiency_level">Beginner</p>
@@ -117,26 +117,26 @@
         <section id="projects">
             <div class="desktop_apps">
                 <div class="project_container">
+                    <br>
                     <h3 class="project_title">Centipede</h3>
                     <p class="stack">C++|SFML|Codeblocks</p>
                     <figure class="demo">
-                        <img src="Resources\centipede.png" alt="Centipede">
-                        <figcaption>Centipede is a 2D clone of the 1981 Centipede arcade game 
-                               from Atari which was developed and designed by Ed Logg and Dona 
-                               Bailey.</figcaption>
+                        <img src="Resources\centipede2.png" alt="Centipede">
+                        <figcaption> A 2D clone of the 1981 Centipede arcade game from Atari 
+                            which was developed and designed by Ed Logg and Dona Bailey.</figcaption>
+                               <a href="https://github.com/SbongileM/Software_Dev2_Centipede_Project.git"><button type="submit">GitHub Repo</button> </a>
                     </figure>
                     <br>
-                    <a href="https://github.com/SbongileM/Software_Dev2_Centipede_Project.git"><button type="submit">GitHub Repo</button> </a>
                 </div>
                 <br>
                 <div class="project_container">
-                    <h3 class="project_title">Rock-Paper_Scissors</h3>
+                    <h3 class="project_title">Rock-Paper-Scissors</h3>
                     <p class="stack">Python|PyQt|VScode</p>
                     <figure class="demo">
                         <img src="Resources\Rock-Paper-Scissors.png" alt="Rock-Paper-Scissors">
-                        <figcaption>This is a 2D emulation of the classic two player game  </figcaption>
+                        <figcaption>A colourful 2D emulation of an in-person two player game for the classic rock-paper-scissors</figcaption>
+                        <a href="https://github.com/SbongileM/CODSOFT.git"><button type="submit">GitHub Repo</button> </a>
                     </figure>
-                    <a href="https://github.com/SbongileM/CODSOFT.git"><button type="submit">GitHub Repo</button> </a>
                 </div>
                 <br>
                 <div class="project_container">
@@ -145,20 +145,21 @@
                     <figure class="demo">
                         <img src="Resources\Password_gen.png" alt="Password Generator>">
                         <figcaption>A simple and intuitive app to help you keep your accounts
-                            secure. The application can generate passwords between 8 to 50 
+                            secure. The application can generate passwords that are between 8 to 50 
                             characters long. </figcaption>
-                    </figure>
-                    <a href="https://github.com/SbongileM/CODSOFT.git"><button type="submit">GitHub Repo</button> </a>
+                            <a href="https://github.com/SbongileM/CODSOFT.git"><button type="submit">GitHub Repo</button> </a>
+                        </figure>
                 </div>
                 <br>
                 <div class="project_container">
                     <h3 class="project_title">To-Do list Manager</h3>
-                    <p class="stack">Python|PyQt|VScode|SQL</p>
+                    <p class="stack">Python|SQL|PyQt|VScode</p>
                     <figure class="demo">
-                        <img src="Resources\to_do.png" alt="To-Do app">
-                        <figcaption> </figcaption>
+                        <img src="Resources\to_do3.png" alt="To-Do app">
+                        <figcaption> A super tool for task masters.This to-do list manager allows users to
+                            add new list categories, new tasks, task notes and seperate tasks into different categories. </figcaption>
+                        <a href="https://github.com/SbongileM/CODSOFT.git"><button type="submit">GitHub Repo</button> </a>
                     </figure>
-                    <a href="https://github.com/SbongileM/CODSOFT.git"><button type="submit">GitHub Repo</button> </a>
                 </div>
             </div>
             <br>
@@ -167,28 +168,29 @@
                     <h3 class="project_title">Standard Numerical Calculator</h3>
                     <p class="stack">HTML|CSS|Javascript|VScode</p>
                     <figure class="demo">
-                        <img src="Resources\calculator.png" alt="Calculator">
+                        <img src="Resources\calculator2.png" alt="Calculator">
                         <figcaption> </figcaption>
+                        <a href="https://github.com/SbongileM/CODSOFT-Calculator.git"><button type="submit">GitHub Repo</button> </a>
+                        <a href="https://sbongilem.github.io/CODSOFT-Calculator/"><button type="submit">Website</button> </a>
                     </figure>
-                    <a href="https://github.com/SbongileM/CODSOFT-Calculator.git"><button type="submit">GitHub Repo</button> </a>
-                    <a href="https://sbongilem.github.io/CODSOFT-Calculator/"><button type="submit">Website</button> </a>
                 </div>
                 <br>
                 <div class="project_container">
-                    <h3 class="project_title">Osizweni Fitness Landing Page</h3>
-                    <p class="stack">CSS|HTML|VScode</p>
+                    <h3 class="project_title">Osizweni Fitness and Aerobics Center Landing Page</h3>
+                    <p class="stack">HTML|CSS|VScode</p>
                     <figure class="demo">
                         <img src="Resources\landing.png" alt="landing page">
                         <figcaption> </figcaption>
+                        <a href="https://github.com/SbongileM/CODSOFT-LandingWebpage.git"><button type="submit">GitHub Repo</button> </a>
+                        <a href="https://sbongilem.github.io/CODSOFT-LandingWebpage/"><button type="submit">Website</button> </a>
                     </figure>
-                    <a href="https://github.com/SbongileM/CODSOFT-LandingWebpage.git"><button type="submit">GitHub Repo</button> </a>
-                    <a href="https://sbongilem.github.io/CODSOFT-LandingWebpage/"><button type="submit">Website</button> </a>
                 </div>
             </div>
         </section>
         <br>
         <section id="connect">
             <div class="Form">
+                <br>
                 <p>Got a question, a proposal or need more info?</p>
                 <form>
                   <p><legend>Get in touch:</legend></p>
@@ -213,7 +215,7 @@
                     />
                   </p>
                   <p>
-                    <textarea name="message" cols="30" rows="10" placeholder="Type your Message here"></textarea>
+                    <textarea name="message" cols="30" rows="9" placeholder="Type your Message here"></textarea>
                   </p>
                 </form>
                 <br />
@@ -221,19 +223,16 @@
                 Connect
             </button>
             </div>
-            <br>
-            <div class="direct_contact">
-                <h3>Contact me directly</h3>
-                <ul class="socialmedia">
-                    <li class="tel"><a href="tel:0794750456">(+27)79-475-0456</a></li>
-                    <li class="socials">
-                      <a href="mailto:Sbongilep4@gmail.com" target="blank">
-                       Sbongilep4@gmail.com </a></li>
-                  </ul>
-            </div>
             </section>
     </main>
     <footer>
+        <br>
+        <div class="direct_contact">
+            <h3>Contact me directly</h3>
+               <a href="tel:0794750456"> <p class="tel">(+27)79-475-0456</p></a>
+                  <a href="mailto:Sbongilep4@gmail.com" target="blank">
+                    <p class="socials">Sbongilep4@gmail.com </p></a>
+        </div>
         <div class="footer_navigation">
             <nav aria-label="Portfolio-navigation">
                 <ul class="nav_list">
@@ -244,9 +243,10 @@
                 </ul>
             </nav>
         </div>
+        <a href="#" ><p id="top">Back to Top</p></a>
         <br />
       <p class="copyright">
-        Copyright &copy; Sbongile Mdaki. All rights
+        Copyright &copy; 2024 Sbongile Mdaki. All rights
         reserved
       </p>
     </footer>
